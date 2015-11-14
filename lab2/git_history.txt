@@ -1,0 +1,5 @@
+* a02c06a All done with programs
+* bc5b58f Mostly finished with the work, still bug in error 130
+* b6e7154 Initial blank versions of java source files
+* c7c828d Add variables to file following lab1
+* 3cc9a23 Initial commit of a blank Makefile
