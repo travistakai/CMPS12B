@@ -1,0 +1,12 @@
+// README
+
+// Files submitted: 
+// README
+// Makefile
+// Queue.java
+// Tree.java
+// xref.java
+// auxlib.java
+
+// Assumed Makefile did not need to be modified, to run with
+// debug option use $ java xref -d test.txt
