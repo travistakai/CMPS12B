@@ -1,3 +1,6 @@
+#Makefile
+#Compiles and runs queue.c files
+
 MKFILE    = Makefile
 DEPSFILE  = ${MKFILE}.deps
 

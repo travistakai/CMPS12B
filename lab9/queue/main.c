@@ -1,3 +1,6 @@
+//main.c
+//Main file to run the queue ADT in C
+
 #include <assert.h>
 #include <errno.h>
 #include <libgen.h>
@@ -9,6 +12,9 @@
 
 char *execname = NULL;
 int exit_status = EXIT_SUCCESS;
+char *pointers[2048];
+int count = 0;
+
 
 void putinqueue(queue *the_queue, FILE *input, char *filename) {
    char buffer[1024];
@@ -62,8 +68,10 @@ int main (int argc, char **argv) {
    }
 
    while (!queue_isempty(the_queue)) {
-      printf("%s\n", queue_remove(the_queue));
+	char *point = queue_remove(the_queue);
+      printf("%s\n", point);
+	free(point);
    }
-
+   queue_free(the_queue);
    return exit_status;
 }

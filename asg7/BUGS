@@ -1,0 +1,19 @@
+BUGS
+Keeps track of any bugs found in the program files
+
+Bugs and line numbers:
+-Initially the head pointer is not initialized to anything so it cannot be used
+-My solution was to set it equal to NULL
+
+-In function list_insert2(line 24) the nodes need to be pointers rather than actual nodes
+-This causes it to not free memory at the end
+-My solution was to make it the same style as list_insert
+
+-In function list_remove (line 39) the function doesn't actually move a node into the new spot, it only changes where the pointer is in the list
+-It also jumps to an uninitialized part of the list
+-This leads to no removal of a node and only continues to move throygh the list
+-My solution was to rewrite the function so that it frees the node at that point and then move another node into its place
+
+-In function list_destroy the function only frees the head node and leaves the rest of the pointers dangling
+-This creates a memory leak that is unable to be fixed
+-My solution was to rewrite the function and free each node in the list to ensure there is no leftover memory used

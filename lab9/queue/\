@@ -1,6 +1,3 @@
-//queue.c
-//Queue c file that contains the ADT
-
 #include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,8 +23,7 @@ struct queue {
 /* Functions */
 
 queue *queue_new(void) {
-   struct queue *n = malloc(sizeof(struct queue));
-   n->front = n->rear = NULL;
+   queue *n;
    return n;
 }
 
@@ -37,32 +33,20 @@ void queue_free(queue *this) {
 }
 
 void queue_insert(queue *this, queue_item_t item) {
-   //STUBPRINTF("item = \"%s\"\n", item);
-   if(!queue_isempty(this))
-   {
-     this->rear->link = (queue_node *)malloc(sizeof(struct queue_node));
-     this->rear->link->item = item;
-     this->rear = this->rear->link;
-   }
-
-   else
-   {
-     struct queue_node *n = (queue_node *)malloc(sizeof(struct queue_node));
-     n->item = item;
-     this->front = n;
-     this->rear = this->front;
-   }
+   STUBPRINTF("item = \"%s\"\n", item);
+   queue_node *n;
+   n->item = item;
+   this->rear->link = n;
+   this->rear = this->rear->link;
 }
 
 queue_item_t queue_remove(queue *this) {
    assert(!queue_isempty(this));
-
-   struct queue_node *n = this->front->link;
-   queue_item_t t = this->front->item;
+   STUBPRINTF("return NULL\n");
+   queue_node *n = this->front->link;
    free(this->front);
    this->front = n;
-   return(t);
-   
+   return NULL;
 }
 
 bool queue_isempty(queue *this) {

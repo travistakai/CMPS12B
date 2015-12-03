@@ -1,0 +1,12 @@
+README
+Contains list of files being submitted:
+
+"make test" runs the program and puts all valgrind comments into a file named "test.log"
+
+Files submitted:
+README
+MAKEFILE
+Makefile
+queue.c
+queue.h
+main.c
