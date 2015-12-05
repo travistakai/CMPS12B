@@ -9,36 +9,35 @@ class List
 		String room;
 		String description;
 		String[][] cmds;
-		node next;
-		
+		node next;	
 	}
 	
 	
 	node front;
 	node rear;
 
-	void insertRoom(List adventure, String room, String description, String[][] cmds)
+	void insertRoom(String room, String description, String[][] cmds)
 	{
-		if(adventure.front == null)
+		if(front == null)
 		{
-		  adventure.front.room = room;
-		  adventure.front.description = description;
-		  adventure.front.cmds = cmds;
-		  adventure.rear = adventure.front;
+		  front.room = room;
+		  front.description = description;
+		  front.cmds = cmds;
+		  rear = front;
 		}
 
 		else
 		{
-		  adventure.rear.next.room = room;
-		  adventure.rear.next.description = description;
-		  adventure.rear.next.cmds = cmds;
-		  adventure.rear = adventure.rear.next;
+		  rear.next.room = room;
+		  rear.next.description = description;
+		  rear.next.cmds = cmds;
+		  rear = rear.next;
 		}
 	}
 
-	void printRooms(List adventure)
+	void printRooms()
 	{
-		node current = adventure.front;
+		node current = front;
 		String tags = "";
 		int count = 0;
 
@@ -53,5 +52,52 @@ class List
 		  count = 0;
 		  current = current.next;
 		}
+	}
+	
+	void options(String room)
+	{
+		node current = front;
+		int count = 1;
+		while(current != null)
+		{
+		  if(current.room == room)
+		  {
+		    while(current.cmds[count][1]  != null)
+		    {
+			System.out.println(count + " - " + current.cmds[count][0]);
+			count++;
+		    }
+		  }
+
+		  else
+		  current = current.next;
+		}
+	}
+
+	String choice(String room, int option)
+	{
+		node current = front;
+		String nextRoom = "";
+		
+		if(option-1 > current.cmds.length)
+		{
+		  System.out.println("Not a valid option, trry again");
+		}
+		
+		else
+		{
+		
+		  while(current != null)
+		  {
+		    if(current.room == room)
+		    {
+		      nextRoom = current.cmds[option][1];
+		    }
+		    else
+		    current = current.next;
+		  }
+		}
+
+	return nextRoom;
 	}
 }
