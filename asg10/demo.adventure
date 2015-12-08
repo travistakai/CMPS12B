@@ -1,0 +1,189 @@
+r start
+d It's Christmas Eve, but you have yet to get gifts for your friends and family.
+o Shop for your mom.
+t mom
+o Shop for your dad.
+t dad
+o Shop for your brother.
+t brother
+o Shop for your sister.
+t sister
+o Shop for your best friend.
+t friend
+o Reason that you have neither the time nor money to buy anything useful for your family and friends. 
+t victory
+
+r mom
+d You decide to go shopping for your mom, but all the shops are closed for the holidays.
+d You buy her a can opener.
+o Continue shopping for your mom.
+t mom2
+o Go shopping for your dad.
+t dad
+o Go shopping for your brother.
+t brother
+o Go shopping for your sister.
+t sister
+o Go shopping for your best friend.
+t friend
+o Call it a day.
+t victory
+
+r mom2
+d You manage to track down a very nice vase at a thrift store.
+d You feel satisfied and hurry off to buy the rest of the gifts.
+o Shop for your dad.
+t dad
+o Shop for your brother.
+t brother
+o Shop for your sister.
+t sister
+o Shop for your best friend.
+t friend
+o Call it a day.
+t victory
+
+r dad
+d You want to buy a gift for your dad, but you don't know what to get him.
+o Try your luck at Lowe's.
+t lowes
+o Try your luck at Target.
+t target
+o Try your luck at Home Depot.
+t hd
+
+r lowes
+d You step into the establishment and notice all the shelves are empty.
+d It's practically a desolate wasteland.
+o Try your luck at Target.
+t target
+o Try your luck at Home Depot.
+t hd
+
+r target
+d You make your trek to Target and step into the store, safe from what you think is the blistering cold. 
+d It's a cool 57 degrees. Californians are truly spoiled.
+d There's nothing at Target, save the excellent assortment of goodies from the makeshift food court.
+o Try your luck at Lowe's.
+t lowes
+o Try your luck at Home Depot.
+t hd
+
+r hd
+d You track down a sick gift set specifically geared towards fathers.
+d The gift set consists of an oversized Hawaiian shirt, jean shorts (or "jorts"), and the sportiest sunglasses you have ever seen.
+o Go shopping for your mom.
+t mom
+o Go shopping for your brother.
+t brother
+o Go shopping for your sister.
+t sister
+o Go shopping for your best friend.
+t friend
+o Call it a day.
+t victory
+
+r brother
+d You're trying your best to come up with gift ideas for your brother, but you're struggling.
+d You decide to check his social media accounts for some hints.
+o Check his likes on Facebook.
+t facebook
+o Check his tweets.
+t twitter
+o Check his liked Youtube videos.
+t youtube
+
+r facebook
+d You look through the "About" tab on his Facebook page.
+d It's extremely outdated and you're pretty sure that he's out of his Kung Fu Panda phase.
+o Check his tweets.
+t twitter
+o Check his liked Youtube videos.
+t youtube
+
+r twitter
+d Eureka! Your brother has tweeted 27 times in the last ten minutes! You get to reading right away.
+d You find out he's currently obsessed with Kung Fu Panda 3.
+d You buy him 70 dollars worth of Kung Fu Panda merchandise, including a monkey mask signed by Jackie Chan himself. 
+o Go shopping for your mom.
+t mom
+o Go shopping for your dad.
+t dad
+o Go shopping for your sister.
+t sister
+o Go shopping for your best friend.
+t friend
+o Call it a day.
+t victory
+
+r youtube
+d All you can find on his liked playlist from Youtube is a bunch of minecraft videos.
+d You know nothing about about Minecraft.
+o Check his likes on Facebook.
+t facebook
+o Check his tweets.
+t twitter
+
+r sister
+d You're pretty close with your sister, and have a good idea of what she wants for this Christmas
+d You make a list of possible gifts for her, and write them out:
+o An autographed selfie of Prof. Whitehead.
+t autograph
+o Authentic cuisine from the College 9 dining hall.
+t dining
+o The password to your highly coveted Netflix account.
+t netflix
+
+r autograph
+d Your sister sat in on the #hash lecture and was absolutely inspired.
+d Unfortunately, you couldn't track down Prof. Whitehead.
+o Get her some authentic cuisine from the College 9 dining hall.
+t dining
+o Give her your Netflix password.
+t netflix
+
+r dining
+d You manage to steal a plate of fries from the dining hall without the manager noticing.
+d You freeze the fries in order to preserve the fries, right down to the half-hearted crunch you get when you bite into one.
+o Go shopping for your mom.
+t mom
+o Go shopping for your dad.
+t dad
+o Go shopping for your brother.
+t brother
+o Go shopping for your best friend.
+t friend
+o Call it a day.
+t victory
+
+r netflix
+d You realize she already has access to your account.
+d That's probably why you keep losing track of what's going on in Gossip Girl.
+d You probably shouldn't use the same password for everything.
+o Get her an autographed selfie of Prof. Whitehead.
+t autograph
+o Get her some authentic cuisine from the College 9 dining hall.
+t dining
+
+r friend
+d You know exactly what to get your best friend.
+d A life-sized replica of the Iron Throne, from the Game of Throne.
+d Pretty easy to come by. 
+d Your friend has never watched an episode of Game of Thrones in their life.
+d You are now the owner of a life-sized Iron Throne replica.
+o Go shopping for your mom.
+t mom
+o Go shopping for your dad.
+t dad
+o Go shopping for your brother.
+t brother
+o Go shopping for your sister.
+t sister
+o Call it a day.
+t victory
+
+r victory
+d Exhausted, you return home. The gifts you got, or at least tried to get, may not have been the best, but it's the thought that counts.
+d You give anyone who didn't get a gift a personalized coupon book, redeemable anytime for the next year.
+d You stuff your face with all the great food and start lowkey stressing about the upcoming quarter.
+d Victory! Happy Holidays!

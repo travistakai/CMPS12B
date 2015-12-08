@@ -1,4 +1,4 @@
-JAVASRC = List.java Stack.java cyoa.java
+JAVASRC = List.java Stack.java cyoa.java parserSep.java
 
 make:
 	javac ${JAVASRC}

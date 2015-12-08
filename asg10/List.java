@@ -100,4 +100,17 @@ class List
 
 	return nextRoom;
 	}
+
+	String firstRoom()
+	{
+	  if(front != null)
+	  return front.description;
+
+	  else
+	  {
+	    System.out.println("No rooms in your file!");
+	    System.exit(1);
+	    return "so close";
+	  }
+	}
 }
